@@ -11,7 +11,7 @@ my @lines;
 
 open(my $input_file, '<', "table.txt");# or die $!;
 
-while(< $input_file >){
+while(<$input_file>){
 	@lines=split(/:/, $_);
 	push @Table, @lines;
 }
