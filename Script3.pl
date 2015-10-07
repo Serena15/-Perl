@@ -11,17 +11,16 @@ my @lines;
 
 open(my $input_file, '<', "table.txt");# or die $!;
 
-while(<$input_file>){
+while(< $input_file >){
 	@lines=split(/:/, $_);
 	push @Table, @lines;
-	#print $_;
 }
 
-print "Here is print Data::Dumper array in tha array: \n";
+print "Here is print Data::Dumper array in the array: \n";
 
 say Dumper \@Table;
 
-print "Here is print DDP array in tha array: \n";
+print "Here is print DDP array in the array: \n";
 
 p @Table;
 
